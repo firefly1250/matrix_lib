@@ -150,7 +150,7 @@ public:
 		std::string str = "";
 		for (size_t i = 0; i < row; i++) {
 			for (size_t j = 0; j < column; j++) {
-				str += std::to_string(GetElement(i,j));
+				str += std::to_string((*this)(i,j));
 				if (j < column - 1) str += ", ";
 			}
 			str += "\n";
